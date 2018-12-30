@@ -7,7 +7,7 @@ public class SearchinRotatedSortedArrayII_81 {
 	    while (left <= right) {
 	        int mid = (left + right) / 2;
 	        if (target == nums[mid]) return true;
-	        if (nums[mid] == nums[left]) left++;		//´Ë´¦¹Ø¼ü
+	        if (nums[mid] == nums[left]) left++;		//æ­¤å¤„å…³é”®
 	        else if (nums[mid] > nums[left]) {
 	            if (nums[left] <= target && nums[mid] > target) right = mid - 1;
 	            else left = mid + 1;
